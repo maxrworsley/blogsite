@@ -1,0 +1,115 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+dfn {
+  font-weight: bold;
+  color: orange;
+  font-style: normal;
+}
+
+figure figcaption {
+  text-align: center;
+  font-size: .7em;
+}
+
+div.workshop-announcement a {
+  border-bottom: .125em dashed #bdbdbd;
+}
+
+.details-container {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 3px;
+}
+
+.details-container>details {
+  flex-grow: 1;
+}
+
+/* Hack to remove buttons from nested dropdowns */
+.details-container>details>.details-container>button {
+  display: none;
+}
+
+details {
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  padding: .5em .5em 0;
+}
+
+details :last-child {
+  margin-bottom: 0.5em;
+}
+
+blockquote em {
+  font-style: normal;
+}
+
+summary {
+  font-weight: bold;
+  margin: -.5em -.5em 0;
+  padding: .5em .5em 8px;
+  cursor: pointer;
+  display: list-item;
+}
+
+details[open] {
+  padding: .5em;
+}
+
+details[open] summary {
+  border-bottom: 1px solid #aaa;
+  margin-bottom: .5em;
+}
+
+.embeddable-buttondown-form input#bd-email {
+  padding-top: 0.325em;
+  padding-bottom: 0.325em;
+
+}
+
+.embeddable-buttondown-form input {
+  font-size: 1em;
+  font-weight: 200;
+  text-transform: none;
+
+
+}
+
+button,
+input[type=button],
+input[type=reset],
+input[type=submit] {
+  border: none;
+  letter-spacing: 1px;
+  color: #212121;
+  background: #ffcd00;
+}
+
+button {
+  /* font-size: 1em; */
+  font-weight: 200;
+  text-transform: none;
+  border: none;
+  letter-spacing: 1px;
+  color: #212121;
+  background: #ffcd00;
+  text-transform: none;
+}
+
+button.details-open-all {
+  font-size: 0.8em;
+  width: 70px;
+}
