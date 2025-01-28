@@ -22,10 +22,11 @@ function PostListPost({ postName }) {
 
     return (
         <>
-            <Link className='post-list-post' to={`/posts/${postName}`}>
-                {postName}
-            </Link>
-            <p>{dateString}</p>
+            <div className='post-title-div'>
+                <Link className='post-title-link' to={`/posts/${postName}`}>
+                    {dateString} -  {postName}
+                </Link>
+            </div>
         </>
     );
 }

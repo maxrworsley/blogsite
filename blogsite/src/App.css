@@ -2,7 +2,7 @@
   --background-color: rgb(230, 230, 230);
   --text-color: rgb(79, 79, 76);
   --emphasis-color: rgb(53, 53, 53);
-  --hover-color: rgb(250, 152, 72);
+  --accent-color: rgb(250, 152, 72);
 }
 
 body {
@@ -26,11 +26,11 @@ body {
 }
 
 .banner-link:hover {
-  color: var(--hover-color);
+  color: var(--accent-color);
 }
 
 .title {
-  color: var(--hover-color);
+  color: var(--accent-color);
   text-align: left;
   font-size: 2.5em;
   margin-top: 2.5em;
@@ -42,28 +42,32 @@ body {
   font-size: 1.5em;
   margin-top: 2.5em;
   margin-left: 3.5em;
-  font-weight: normal;
 }
 
 .post-list {
   text-align: left;
   margin-top: 2.5em;
   margin-left: 3em;
-  font-weight: normal;
 }
 
 .post-list ul li {
   list-style-type: none;
 }
 
-.post-list-post {
-  color: var(--text-color);
-  font-weight: bold;
-  text-decoration: none;
+/* Post List Post */
+.post-title-div {
+  margin-top: 1.5em;
+  padding-left: 1.5em;
 }
 
-.post-list-post:hover {
-  color: var(--hover-color)
+.post-title-link {
+  color: var(--text-color);
+  text-decoration: none;
+  font-size: 1.25em;
+}
+
+.post-title-link:hover {
+  color: var(--accent-color)
 }
 
 /* Post */
@@ -71,4 +75,11 @@ body {
   text-align: left;
   margin-left: 5em;
   margin-top: 5em;
+}
+
+.post-content code {
+  background-color: var(--emphasis-color);
+  color: white;
+  padding: 0.5em;
+  border-radius: 0.5em;
 }

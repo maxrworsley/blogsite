@@ -9,3 +9,5 @@ Lorem blah blah
 ```sql
 SELECT * FROM table_name LIMIT 1;
 ```
+
+![Image Description](https://email.uplers.com/blog/wp-content/uploads/2020/03/em-vs-px-in-emails.jpg)
