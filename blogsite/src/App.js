@@ -7,11 +7,10 @@ import Home from './pages/Home';
 
 
 function App() {
-  // Generate post names into list from the /posts directory
   var postNames = require.context('./posts', false, /\.md$/).keys();
   // Strip the file extension and path from the post names
   postNames = postNames.map((postName) => postName.replace(/^\.\/|\.md$/g, ''));
-  console.log(postNames)
+
   return (
     <>
       <Router>

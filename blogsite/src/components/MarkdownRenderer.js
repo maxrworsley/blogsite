@@ -6,8 +6,4 @@ const MarkdownRenderer = ({ content }) => {
     return <ReactMarkdown remarkPlugins={[remarkGfm]}>{content}</ReactMarkdown>;
 };
 
-// const MarkdownRenderer = ({ content }) => {
-//     return "content here"
-// };
-
 export default MarkdownRenderer;

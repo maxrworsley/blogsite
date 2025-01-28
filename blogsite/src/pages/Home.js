@@ -1,32 +1,24 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
+import Banner from './Banner';
 
 const Home = ({ postNames }) => {
     return (
         <div>
             <header>
-                <nav>
-                    <ul>
-                        <li>
-                            <Link to="/">Home</Link>
-                        </li>
-                        <li>
-                            <Link to="/about">About</Link>
-                        </li>
-                    </ul>
-                </nav>
+                <Banner />
             </header>
             <main>
-                <h1>Welcome to my Blog</h1>
-                <h2>Latest Posts</h2>
-                <ul>
-                    {postNames.map((postName) => (
-                        <li key={postName}>
-                            <Link to={`/posts/${postName}`}>{postName}</Link>
-                        </li>
-                    ))}
-                </ul>
+                <h2 className='latest-posts'>Latest posts</h2>
+                <div className='post-list'>
+                    <ul>
+                        {postNames.map((postName) => (
+                            <li key={postName}>
+                                <Link className='post-list-post' to={`/posts/${postName}`}>{postName}</Link>
+                            </li>
+                        ))}
+                    </ul>
+                </div>
             </main>
         </div>
     );

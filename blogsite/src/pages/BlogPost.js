@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import MarkdownRenderer from '../components/MarkdownRenderer';
 import { useParams } from 'react-router-dom';
+import Banner from './Banner';
 
 const BlogPost = () => {
     const { postId } = useParams();
@@ -14,7 +15,13 @@ const BlogPost = () => {
             .catch((err) => console.error(err));
     }, [postId]);
 
-    return <MarkdownRenderer content={content} />;
+    return (
+        <>
+            <Banner />
+            <MarkdownRenderer content={content} />
+        </>
+    );
+
 };
 
 export default BlogPost;
