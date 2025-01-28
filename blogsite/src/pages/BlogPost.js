@@ -11,7 +11,13 @@ const BlogPost = () => {
         import(`../posts/${postId}.md`)
             .then((res) => fetch(res.default))
             .then((res) => res.text())
-            .then((text) => setContent(text))
+            .then((text) => {
+                // Remove the first two lines (title and date)
+                const lines = text.split('\n');
+                lines.splice(0, 2);
+                const modifiedText = lines.join('\n');
+                setContent(modifiedText);
+            })
             .catch((err) => console.error(err));
     }, [postId]);
 

@@ -1,6 +1,6 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import Banner from './Banner';
+import PostListPost from '../components/PostListPost';
 
 const Home = ({ postNames }) => {
     return (
@@ -14,7 +14,7 @@ const Home = ({ postNames }) => {
                     <ul>
                         {postNames.map((postName) => (
                             <li key={postName}>
-                                <Link className='post-list-post' to={`/posts/${postName}`}>{postName}</Link>
+                                <PostListPost postName={postName} />
                             </li>
                         ))}
                     </ul>

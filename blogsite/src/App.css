@@ -1,58 +1,74 @@
+:root {
+  --background-color: rgb(230, 230, 230);
+  --text-color: rgb(79, 79, 76);
+  --emphasis-color: rgb(53, 53, 53);
+  --hover-color: rgb(250, 152, 72);
+}
+
 body {
-  background-color: rgb(230, 230, 230);
-  color: rgb(79, 79, 76);
-  text-emphasis-color: rgb(42, 42, 41);
+  background-color: var(--background-color);
+  color: var(--text-color);
+  text-emphasis-color: var(--emphasis-color);
 }
 
 /* Banner */
 .banner-menu li {
+  margin-top: 1.5em;
   display: inline-block;
-  text-indent: 50px;
+  text-indent: 3em;
 }
 
 .banner-link {
   text-decoration: none;
-  font-size: 25px;
-  color: rgb(79, 79, 76);
+  font-size: 1.5em;
+  color: var(--text-color);
   font-weight: bold;
 }
 
 .banner-link:hover {
-  color: rgb(36, 36, 35);
+  color: var(--hover-color);
 }
 
 .title {
+  color: var(--hover-color);
   text-align: left;
-  font-size: 40px;
-  padding-left: 80px;
+  font-size: 2.5em;
+  margin-top: 2.5em;
+  margin-left: 2em;
 }
 
 /* Home */
-
 .latest-posts {
-  text-align: left;
-  font-size: 25px;
-  padding-left: 80px;
+  font-size: 1.5em;
+  margin-top: 2.5em;
+  margin-left: 3.5em;
   font-weight: normal;
-  max-width: 900px;
+}
+
+.post-list {
+  text-align: left;
+  margin-top: 2.5em;
+  margin-left: 3em;
+  font-weight: normal;
 }
 
 .post-list ul li {
   list-style-type: none;
 }
 
-.post-list {
-  text-align: left;
-  margin-top: 40px;
-  padding-left: 60px;
-  font-weight: normal;
-  max-width: 900px;
-}
-
 .post-list-post {
+  color: var(--text-color);
+  font-weight: bold;
   text-decoration: none;
 }
 
 .post-list-post:hover {
-  font-weight: bold;
+  color: var(--hover-color)
+}
+
+/* Post */
+.post-content {
+  text-align: left;
+  margin-left: 5em;
+  margin-top: 5em;
 }
