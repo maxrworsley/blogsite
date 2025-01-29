@@ -54,6 +54,14 @@ body {
   list-style-type: none;
 }
 
+/* About */
+.about-content {
+  text-align: left;
+  max-width: 50em;
+  margin-left: 5em;
+  margin-top: 5em;
+}
+
 /* Post List Post */
 .post-title-div {
   margin-top: 1.5em;
@@ -73,6 +81,7 @@ body {
 /* Post */
 .post-content {
   text-align: left;
+  max-width: 50em;
   margin-left: 5em;
   margin-top: 5em;
 }

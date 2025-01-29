@@ -7,7 +7,7 @@ function About() {
             <header>
                 <Banner />
             </header>
-            <div>
+            <div className='about-content'>
                 <h1>About Me</h1>
                 <p> This site contains blog posts</p>
             </div>
