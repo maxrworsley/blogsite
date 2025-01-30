@@ -112,18 +112,24 @@ body {
 
   .banner-menu li {
     margin-top: 1.5em;
-    text-indent: 0em;
+    text-indent: 1em;
   }
 
   .latest-posts {
     font-size: 1.5em;
     margin-top: 2.5em;
-    margin-left: 2.5em;
+    margin-left: 0.5em;
+    padding-left: 0em;
   }
 
   .post-list {
     text-align: left;
     margin-top: 2.5em;
     margin-left: 0em;
+    padding-left: 0em;
+  }
+
+  .post-list ul {
+    padding-left: 0em;
   }
 }
