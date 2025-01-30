@@ -39,8 +39,7 @@ body {
   color: var(--accent-color);
   text-align: left;
   font-size: 2.5em;
-  margin-top: 2.5em;
-  margin-left: 2em;
+  margin: 2em 2em 2em 2.5em;
 }
 
 /* About */
@@ -87,10 +86,8 @@ body {
 /* Post */
 .post-content {
   text-align: left;
-  max-width: 50em;
-  margin-top: 5em;
-  margin-left: 5em;
-  margin-right: 5em;
+  max-width: 40em;
+  margin: 0em 10em 0em 10em;
 }
 
 .post-content code {
@@ -101,7 +98,7 @@ body {
   padding-right: 0.2em;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 750px) {
   .post-content {
     margin-right: 1em;
     margin-left: 1em;
@@ -110,13 +107,12 @@ body {
   .title {
     text-align: center;
     font-size: 2.5em;
-    margin-top: 1em;
-    margin-left: 0em;
+    margin: 1em 0em 0em 0em;
   }
 
   .banner-menu li {
     margin-top: 1.5em;
-    text-indent: 2em;
+    text-indent: 0em;
   }
 
   .latest-posts {
